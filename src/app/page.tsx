@@ -13,7 +13,7 @@ export default function Home() {
         <div className="font-medium">Hi, Mark</div>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-4">
+      <main className="flex-1 flex flex-col items-center pt-40">
         <Clock />
         <div className="w-full max-w-xl">
           <input
@@ -72,7 +72,12 @@ export default function Home() {
         <div className="w-px h-4 bg-zinc-600"></div>
         <div className="flex items-center space-x-2">
           <i className="bi bi-music-note-beamed text-white text-xl"></i>
-          <span className="text-sm text-zinc-300">Chill Lo-fi Beats</span>
+          <div className="marquee-chip w-32">
+            <div className="marquee-chip__track text-sm text-zinc-300">
+              <span>Chill Lo-fi Beats</span>
+              <span aria-hidden="true">Chill Lo-fi Beats</span>
+            </div>
+          </div>
         </div>
         <div className="w-px h-4 bg-zinc-600"></div>
         <div className="flex items-center space-x-2">

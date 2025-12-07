@@ -22,3 +22,30 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.marquee-chip {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-chip__track {
+  display: inline-flex;
+  width: max-content;
+  transform: translateX(-50%);
+  animation: marquee-chip 7s linear infinite;
+}
+
+.marquee-chip__track span {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-right: 1.5rem;
+}
+
+@keyframes marquee-chip {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
